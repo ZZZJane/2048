@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048 Game</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="HandheldFriendly" content="True">
+  <!-- 微软的老式浏览器 -->
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="/2048/css/main.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+
+<body>
+  <div class="mobile-top"></div>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title"><a href='/'>2048</a></h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <div class="game-intro">
+      <a class="restart-button">New Game</a>
+      <h2 class='subtitle'>Let's Play <strong>2048 Game</strong>!</h2>
+      <div class='above-game'>
+        <p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+<br>
+    <div class="fb-line">
+      <p class="game-explanation">
+        <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      </p>
+      <div class="clear"></div> 
+    </div>
+    <div class="clearfix"></div><!--清除浮动溢出fb-line溢出了-->
+  </div>
+<script src="/2048/js/my2048.js"></script>
+</body>
+</html>
